@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         
-        <title> @yield('title', 'Center for Innovation and Advanced Skills') | CIAS</title>
+        <title>@yield('title', 'Center for Innovation and Advanced Skills') | CIAS</title>
 
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
@@ -12,24 +12,30 @@
         <!-- ======================= CSS ===================== -->
 
         <!-- Icon Font CSS -->
-        <!-- <link rel="stylesheet" href="{{ asset('assets/css/plugins/icofont.min.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugins/icofont.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/flaticon.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/plugins/font-awesome.min.css') }}" /> -->
+        <link rel="stylesheet" href="{{ asset('assets/css/plugins/font-awesome.min.css') }}" /> --}}
 
         <!-- Plugins CSS -->
-        <!-- <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/swiper-bundle.min.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/magnific-popup.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/nice-select.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/apexcharts.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/plugins/jqvmap.min.css') }}" /> -->
+        <link rel="stylesheet" href="{{ asset('assets/css/plugins/jqvmap.min.css') }}" /> --}}
 
         <!-- Main Style CSS -->
-        <!-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" /> -->
+        {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" /> --}}
 
         <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
-        <link rel="stylesheet" href="{{ asset('assets/css/vendor/plugins.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/plugins.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}" />
+
+        <!-- App CSS -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
+
+        <!-- head section -->
+        @yield('head')
     </head>
 
     <body>
@@ -101,7 +107,7 @@
                     <div class="header-main-wrapper">
                     <!-- Header Logo Start -->
                     <div class="header-logo">
-                        <a href="home.html"
+                        <a href="{{ route('home') }}"
                         ><img src="{{ asset('assets/images/logo.png') }}" alt="Logo"
                         /></a>
                     </div>
@@ -110,7 +116,7 @@
                     <!-- Header Menu Start -->
                     <div class="header-menu d-none d-lg-block">
                         <ul class="nav-menu">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
                         <li>
                             <a href="#">All Course</a>
                             <ul class="sub-menu">
@@ -186,7 +192,8 @@
                             </li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{{ route('about') }}">About</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
                     </div>
                     <!-- Header Menu End -->
@@ -250,7 +257,7 @@
                 <!-- Mobile Menu Start -->
                 <div class="mobile-menu-items">
                 <ul class="nav-menu">
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li>
                     <a href="#">All Course</a>
                     <ul class="sub-menu">
@@ -316,7 +323,8 @@
                         </li>
                     </ul>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="{{ route('about') }}">About</a></li>
+                    <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
                 </div>
                 <!-- Mobile Menu End -->
@@ -345,107 +353,6 @@
             <!-- Overlay Start -->
             <div class="overlay"></div>
             <!-- Overlay End -->
-
-            <!-- Slider Start -->
-            <div class="section slider-section">
-                <!-- Slider Shape Start -->
-                <div class="slider-shape">
-                <img
-                    class="shape-1 animation-round"
-                    src="{{ asset('assets/images/shape/shape-8.png') }}"
-                    alt="Shape"
-                />
-                </div>
-                <!-- Slider Shape End -->
-
-                <div class="container">
-                <!-- Slider Content Start -->
-                <div class="slider-content">
-                    <h4 class="sub-title">Start your favourite course</h4>
-                    <h2 class="main-title">
-                    Now learning from anywhere, and build your
-                    <span>bright career.</span>
-                    </h2>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                    <a class="btn btn-primary btn-hover-dark" href="#"
-                    >Start A Course</a
-                    >
-                </div>
-                <!-- Slider Content End -->
-                </div>
-
-                <!-- Slider Courses Box Start -->
-                <div class="slider-courses-box">
-                <img
-                    class="shape-1 animation-left"
-                    src="{{ asset('assets/images/shape/shape-5.png') }}"
-                    alt="Shape"
-                />
-
-                <div class="box-content">
-                    <div class="box-wrapper">
-                    <i class="flaticon-open-book"></i>
-                    <span class="count">1,235</span>
-                    <p>courses</p>
-                    </div>
-                </div>
-
-                <img
-                    class="shape-2"
-                    src="{{ asset('assets/images/shape/shape-6.png') }}"
-                    alt="Shape"
-                />
-                </div>
-                <!-- Slider Courses Box End -->
-
-                <!-- Slider Rating Box Start -->
-                <div class="slider-rating-box">
-                <div class="box-rating">
-                    <div class="box-wrapper">
-                    <span class="count">4.8 <i class="flaticon-star"></i></span>
-                    <p>Rating (86K)</p>
-                    </div>
-                </div>
-
-                <img
-                    class="shape animation-up"
-                    src="{{ asset('assets/images/shape/shape-7.png') }}"
-                    alt="Shape"
-                />
-                </div>
-                <!-- Slider Rating Box End -->
-
-                <!-- Slider Images Start -->
-                <div class="slider-images">
-                <div class="images">
-                    <img src="{{ asset('assets/images/slider/slider-2.png') }}" alt="Slider" />
-                </div>
-                </div>
-                <!-- Slider Images End -->
-
-                <!-- Slider Video Start -->
-                <div class="slider-video">
-                <img
-                    class="shape-1"
-                    src="{{ asset('assets/images/shape/shape-9.png') }}"
-                    alt="Shape"
-                />
-
-                <div class="video-play">
-                    <img src="{{ asset('assets/images/shape/shape-10.png') }}" alt="Shape" />
-                    <a
-                    href="https://www.youtube.com/watch?v=rOnISEnoxg4&t=105s"
-                    class="play video-popup"
-                    ><i class="flaticon-play"></i
-                    ></a>
-                </div>
-                </div>
-                <!-- Slider Video End -->
-            </div>
-            <!-- Slider End -->
 
             @yield('content')
 
@@ -615,20 +522,26 @@
         <script src="{{ asset('assets/js/vendor/jquery-3.5.1.min.js') }}"></script>
 
         <!-- Bootstrap JS -->
-        <!-- <script src="{{ asset('assets/js/plugins/popper.min.js') }}"></script>
-        <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script> -->
+        {{-- <script src="{{ asset('assets/js/plugins/popper.min.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script> --}}
 
         <!-- Plugins JS -->
-        <!-- <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
+        {{-- <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
         <script src="{{ asset('assets/js/plugins/jquery.magnific-popup.min.js') }}"></script>
         <script src="{{ asset('assets/js/plugins/video-playlist.js') }}"></script>
         <script src="{{ asset('assets/js/plugins/jquery.nice-select.min.js') }}"></script>
-        <script src="{{ asset('assets/js/plugins/ajax-contact.js') }}"></script> -->
+        <script src="{{ asset('assets/js/plugins/ajax-contact.js') }}"></script> --}}
 
         <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
         <script src="{{ asset('assets/js/plugins.min.js') }}"></script>
 
         <!-- Main JS -->
         <script src="{{ asset('assets/js/main.js') }}"></script>
+
+        <!-- App JS -->
+        <script src="{{ asset('js/app.js') }}"></script>
+
+        <!-- body section -->
+        @yield('body')
     </body>
 </html>
