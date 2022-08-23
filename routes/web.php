@@ -23,3 +23,9 @@ Route::get('/contact', [PageController::class, 'contact'])
 
 Route::get('/about', [PageController::class, 'about'])
     ->name('about');
+
+Route::get('/login', [Auth\LoginController::class, 'create'])
+    ->name('login');
+
+Route::get('/register', [Auth\RegisterController::class, 'create'])
+    ->name('register');
