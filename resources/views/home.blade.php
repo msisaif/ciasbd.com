@@ -2864,7 +2864,7 @@
 
     <!-- All Courses BUtton Start -->
     <div class="courses-btn text-center">
-      <a href="courses.html" class="btn btn-secondary btn-hover-primary"
+      <a href="{{ route('courses.index') }}" class="btn btn-secondary btn-hover-primary"
         >Other Course</a
       >
     </div>

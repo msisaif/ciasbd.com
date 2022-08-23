@@ -29,3 +29,8 @@ Route::get('/login', [Auth\LoginController::class, 'create'])
 
 Route::get('/register', [Auth\RegisterController::class, 'create'])
     ->name('register');
+
+Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
+    Route::get('/', 'index')->name('index');
+    Route::get('/{course}', 'show')->name('show');
+});
