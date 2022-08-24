@@ -7,13 +7,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -33,7 +33,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -45,7 +45,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -53,13 +53,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -72,7 +72,7 @@
         <div class="contact-map-wrapper">
             <iframe
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2582.506760904109!2d90.38556449867232!3d23.739672575450186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8c6fddec46d%3A0x56930d03c95d73a0!2sKatabon%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1661301519495!5m2!1sen!2sbd"
             ></iframe>
         </div>
         <!-- Contact Map Wrapper End -->
@@ -91,7 +91,7 @@
                     <div class="contact-info">
                         <img
                             class="shape animation-round"
-                            src="assets/images/shape/shape-12.png"
+                            src="{{ asset('assets/images/shape/shape-12.png') }}"
                             alt="Shape"
                         />
 
@@ -104,7 +104,7 @@
                                 <h6 class="title">Phone No.</h6>
                                 <p>
                                     <a href="tel:88193326867"
-                                        >(88) 193 326 867</a
+                                        >+88 01762-284311</a
                                     >
                                 </p>
                             </div>
@@ -121,8 +121,8 @@
                                 </h6>
                                 <p>
                                     <a
-                                        href="mailto:edule100@gmail.com"
-                                        >edule100@gmail.com</a
+                                        href="mailto:info@ciasbd.com"
+                                        >info@ciasbd.com</a
                                     >
                                 </p>
                             </div>
@@ -137,7 +137,7 @@
                                 <h6 class="title">
                                     Office Address.
                                 </h6>
-                                <p>Talga, Alabama, USA</p>
+                                <p>Katabon, Dhaka.</p>
                             </div>
                         </div>
                         <!-- Single Contact Info End -->

@@ -28,7 +28,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <a class="btn btn-primary btn-hover-dark" href="#"
+      <a class="btn btn-primary btn-hover-dark" href="{{ route('courses.index') }}"
         >Start A Course</a
       >
     </div>
@@ -3132,245 +3132,95 @@
 <!-- Testimonial End -->
 
 <!-- Brand Logo Start -->
-<div class="section section-padding-02">
-  <div class="container">
-    <!-- Brand Logo Wrapper Start -->
-    <div class="brand-logo-wrapper">
-      <img
-        class="shape-1"
-        src="{{ asset('assets/images/shape/shape-19.png') }}"
-        alt="Shape"
-      />
+<div class="section section-padding">
+    <div class="container">
+        <!-- Brand Logo Wrapper Start -->
+        <div class="brand-logo-wrapper">
+            <img
+                class="shape-1"
+                src="{{ asset('assets/images/shape/shape-19.png') }}"
+                alt="Shape"
+            />
 
-      <img
-        class="shape-2 animation-round"
-        src="{{ asset('assets/images/shape/shape-20.png') }}"
-        alt="Shape"
-      />
+            <img
+                class="shape-2 animation-round"
+                src="{{ asset('assets/images/shape/shape-20.png') }}"
+                alt="Shape"
+            />
 
-      <!-- Section Title Start -->
-      <div class="section-title shape-03">
-        <h2 class="main-title">Best Supporter of <span> CIAS.</span></h2>
-      </div>
-      <!-- Section Title End -->
-
-      <!-- Brand Logo Start -->
-      <div class="brand-logo brand-active">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-01.png') }}" alt="Brand" />
+            <!-- Section Title Start -->
+            <div class="section-title shape-03">
+                <h2 class="main-title">
+                    Best Supporter of <span> CIAS.</span>
+                </h2>
             </div>
-            <!-- Single Brand End -->
+            <!-- Section Title End -->
 
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-02.png') }}" alt="Brand" />
-            </div>
-            <!-- Single Brand End -->
+            <!-- Brand Logo Start -->
+            <div class="brand-logo brand-active">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-01.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
 
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-03.png') }}" alt="Brand" />
-            </div>
-            <!-- Single Brand End -->
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-02.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
 
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-04.png') }}" alt="Brand" />
-            </div>
-            <!-- Single Brand End -->
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-03.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
 
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-05.png') }}" alt="Brand" />
-            </div>
-            <!-- Single Brand End -->
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-04.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
 
-            <!-- Single Brand Start -->
-            <div class="single-brand swiper-slide">
-              <img src="{{ asset('assets/images/brand/brand-06.png') }}" alt="Brand" />
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-05.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
+
+                        <!-- Single Brand Start -->
+                        <div class="single-brand swiper-slide">
+                            <img
+                                src="{{ asset('assets/images/brand/brand-06.png') }}"
+                                alt="Brand"
+                            />
+                        </div>
+                        <!-- Single Brand End -->
+                    </div>
+                </div>
             </div>
-            <!-- Single Brand End -->
-          </div>
+            <!-- Brand Logo End -->
         </div>
-      </div>
-      <!-- Brand Logo End -->
+        <!-- Brand Logo Wrapper End -->
     </div>
-    <!-- Brand Logo Wrapper End -->
-  </div>
 </div>
 <!-- Brand Logo End -->
-
-<!-- Blog Start -->
-<div class="section section-padding mt-n1">
-  <div class="container">
-    <!-- Section Title Start -->
-    <div class="section-title shape-03 text-center">
-      <h5 class="sub-title">Latest News</h5>
-      <h2 class="main-title">Educational Tips & <span> Tricks</span></h2>
-    </div>
-    <!-- Section Title End -->
-
-    <!-- Blog Wrapper Start -->
-    <div class="blog-wrapper">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <!-- Single Blog Start -->
-          <div class="single-blog">
-            <div class="blog-image">
-              <a href="blog-details-left-sidebar.html"
-                ><img src="{{ asset('assets/images/blog/blog-01.jpg') }}" alt="Blog"
-              /></a>
-            </div>
-            <div class="blog-content">
-              <div class="blog-author">
-                <div class="author">
-                  <div class="author-thumb">
-                    <a href="#"
-                      ><img
-                        src="{{ asset('assets/images/author/author-01.jpg') }}"
-                        alt="Author"
-                    /></a>
-                  </div>
-                  <div class="author-name">
-                    <a class="name" href="#">Hasanul Bari</a>
-                  </div>
-                </div>
-                <div class="tag">
-                  <a href="#">Science</a>
-                </div>
-              </div>
-
-              <h4 class="title">
-                <a href="blog-details-left-sidebar.html"
-                  >Data Science and Machine Learning with Python - Hands
-                  On!</a
-                >
-              </h4>
-
-              <div class="blog-meta">
-                <span>
-                  <i class="icofont-calendar"></i> 21 March, 2021</span
-                >
-                <span> <i class="icofont-heart"></i> 2,568+ </span>
-              </div>
-
-              <a
-                href="blog-details-left-sidebar.html"
-                class="btn btn-secondary btn-hover-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-          <!-- Single Blog End -->
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <!-- Single Blog Start -->
-          <div class="single-blog">
-            <div class="blog-image">
-              <a href="blog-details-left-sidebar.html"
-                ><img src="{{ asset('assets/images/blog/blog-02.jpg') }}" alt="Blog"
-              /></a>
-            </div>
-            <div class="blog-content">
-              <div class="blog-author">
-                <div class="author">
-                  <div class="author-thumb">
-                    <a href="#"
-                      ><img
-                        src="{{ asset('assets/images/author/author-02.jpg') }}"
-                        alt="Author"
-                    /></a>
-                  </div>
-                  <div class="author-name">
-                    <a class="name" href="#">Mahdi bin Imdad</a>
-                  </div>
-                </div>
-                <div class="tag">
-                  <a href="#">UX Design</a>
-                </div>
-              </div>
-
-              <h4 class="title">
-                <a href="blog-details-left-sidebar.html"
-                  >Create Amazing Color Schemes for Your UX Design
-                  Projects</a
-                >
-              </h4>
-
-              <div class="blog-meta">
-                <span>
-                  <i class="icofont-calendar"></i> 21 March, 2021</span
-                >
-                <span> <i class="icofont-heart"></i> 2,568+ </span>
-              </div>
-
-              <a
-                href="blog-details-left-sidebar.html"
-                class="btn btn-secondary btn-hover-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-          <!-- Single Blog End -->
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <!-- Single Blog Start -->
-          <div class="single-blog">
-            <div class="blog-image">
-              <a href="blog-details-left-sidebar.html"
-                ><img src="{{ asset('assets/images/blog/blog-03.jpg') }}" alt="Blog"
-              /></a>
-            </div>
-            <div class="blog-content">
-              <div class="blog-author">
-                <div class="author">
-                  <div class="author-thumb">
-                    <a href="#"
-                      ><img
-                        src="{{ asset('assets/images/author/author-03.jpg') }}"
-                        alt="Author"
-                    /></a>
-                  </div>
-                  <div class="author-name">
-                    <a class="name" href="#">Mahdi</a>
-                  </div>
-                </div>
-                <div class="tag">
-                  <a href="#">Business</a>
-                </div>
-              </div>
-
-              <h4 class="title">
-                <a href="blog-details-left-sidebar.html"
-                  >Culture & Leadership: Strategies for a Successful
-                  Business</a
-                >
-              </h4>
-
-              <div class="blog-meta">
-                <span>
-                  <i class="icofont-calendar"></i> 21 March, 2021</span
-                >
-                <span> <i class="icofont-heart"></i> 2,568+ </span>
-              </div>
-
-              <a
-                href="blog-details-left-sidebar.html"
-                class="btn btn-secondary btn-hover-primary"
-                >Read More</a
-              >
-            </div>
-          </div>
-          <!-- Single Blog End -->
-        </div>
-      </div>
-    </div>
-    <!-- Blog Wrapper End -->
-  </div>
-</div>
-<!-- Blog End -->
 
 @endsection

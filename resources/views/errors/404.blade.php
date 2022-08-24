@@ -8,13 +8,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -40,7 +40,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -52,7 +52,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -60,13 +60,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -82,7 +82,7 @@
                     <!-- Error Images Start -->
                     <div class="error-images">
                         <img
-                            src="assets/images/error.png"
+                            src="{{ asset('assets/images/error.png') }}"
                             alt="Error"
                         />
                     </div>
@@ -140,7 +140,7 @@
 
             <img
                 class="shape-1 animation-right"
-                src="assets/images/shape/shape-14.png"
+                src="{{ asset('assets/images/shape/shape-14.png') }}"
                 alt="Shape"
             />
 
@@ -150,14 +150,14 @@
                     <li>
                         <a href="#"
                             ><img
-                                src="assets/images/google-play.png"
+                                src="{{ asset('assets/images/google-play.png') }}"
                                 alt="Google Play"
                         /></a>
                     </li>
                     <li>
                         <a href="#"
                             ><img
-                                src="assets/images/app-store.png"
+                                src="{{ asset('assets/images/app-store.png') }}"
                                 alt="App Store"
                         /></a>
                     </li>

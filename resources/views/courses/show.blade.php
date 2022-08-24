@@ -7,13 +7,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -33,7 +33,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -45,7 +45,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -53,13 +53,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -74,14 +74,14 @@
                 <div class="courses-details">
                     <div class="courses-details-images">
                         <img
-                            src="assets/images/courses/courses-details.jpg"
+                            src="{{ asset('assets/images/courses/courses-details.jpg') }}"
                             alt="Courses Details"
                         />
                         <span class="tags">Finance</span>
 
                         <div class="courses-play">
                             <img
-                                src="assets/images/courses/circle-shape.png"
+                                src="{{ asset('assets/images/courses/circle-shape.png') }}"
                                 alt="Play"
                             />
                             <a
@@ -101,7 +101,7 @@
                         <div class="admin-author">
                             <div class="author-thumb">
                                 <img
-                                    src="assets/images/author/author-01.jpg"
+                                    src="{{ asset('assets/images/author/author-01.jpg') }}"
                                     alt="Author"
                                 />
                             </div>
@@ -323,7 +323,7 @@
                                                         class="team-thumb"
                                                     >
                                                         <img
-                                                            src="assets/images/author/author-01.jpg"
+                                                            src="{{ asset('assets/images/author/author-01.jpg') }}"
                                                             alt="Author"
                                                         />
                                                     </div>
@@ -371,7 +371,7 @@
                                                         class="team-thumb"
                                                     >
                                                         <img
-                                                            src="assets/images/author/author-02.jpg"
+                                                            src="{{ asset('assets/images/author/author-02.jpg') }}"
                                                             alt="Author"
                                                         />
                                                     </div>
@@ -419,7 +419,7 @@
                                                         class="team-thumb"
                                                     >
                                                         <img
-                                                            src="assets/images/author/author-03.jpg"
+                                                            src="{{ asset('assets/images/author/author-03.jpg') }}"
                                                             alt="Author"
                                                         />
                                                     </div>
@@ -467,7 +467,7 @@
                                                         class="team-thumb"
                                                     >
                                                         <img
-                                                            src="assets/images/author/author-04.jpg"
+                                                            src="{{ asset('assets/images/author/author-04.jpg') }}"
                                                             alt="Author"
                                                         />
                                                     </div>
@@ -744,7 +744,7 @@
                                                                 class="author-thumb"
                                                             >
                                                                 <img
-                                                                    src="assets/images/author/author-06.jpg"
+                                                                    src="{{ asset('assets/images/author/author-06.jpg') }}"
                                                                     alt="Author"
                                                                 />
                                                                 <i
@@ -825,7 +825,7 @@
                                                                 class="author-thumb"
                                                             >
                                                                 <img
-                                                                    src="assets/images/author/author-07.jpg"
+                                                                    src="{{ asset('assets/images/author/author-07.jpg') }}"
                                                                     alt="Author"
                                                                 />
                                                                 <i
@@ -906,7 +906,7 @@
                                                                 class="author-thumb"
                                                             >
                                                                 <img
-                                                                    src="assets/images/author/author-03.jpg"
+                                                                    src="{{ asset('assets/images/author/author-03.jpg') }}"
                                                                     alt="Author"
                                                                 />
                                                                 <i

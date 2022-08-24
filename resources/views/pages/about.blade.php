@@ -7,13 +7,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -33,7 +33,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -45,7 +45,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -53,13 +53,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -75,7 +75,7 @@
                     <div class="about-images">
                         <div class="images">
                             <img
-                                src="assets/images/about.jpg"
+                                src="{{ asset('assets/images/about.jpg') }}"
                                 alt="About"
                             />
                         </div>
@@ -83,7 +83,7 @@
                         <div class="about-years">
                             <div class="years-icon">
                                 <img
-                                    src="assets/images/logo-icon.png"
+                                    src="{{ asset('assets/images/logo-icon.png') }}"
                                     alt="About"
                                 />
                             </div>
@@ -98,9 +98,9 @@
                 <div class="col-lg-6">
                     <!-- About Content Start -->
                     <div class="about-content">
-                        <h5 class="sub-title">Welcome to Edule.</h5>
+                        <h5 class="sub-title">Welcome to CIAS.</h5>
                         <h2 class="main-title">
-                            You can join with Edule and upgrade your
+                            You can join with CIAS and upgrade your
                             skill for your
                             <span>bright future.</span>
                         </h2>
@@ -226,17 +226,17 @@
         <div class="call-to-action-wrapper">
             <img
                 class="cat-shape-01 animation-round"
-                src="assets/images/shape/shape-12.png"
+                src="{{ asset('assets/images/shape/shape-12.png') }}"
                 alt="Shape"
             />
             <img
                 class="cat-shape-02"
-                src="assets/images/shape/shape-13.svg"
+                src="{{ asset('assets/images/shape/shape-13.svg') }}"
                 alt="Shape"
             />
             <img
                 class="cat-shape-03 animation-round"
-                src="assets/images/shape/shape-12.png"
+                src="{{ asset('assets/images/shape/shape-12.png') }}"
                 alt="Shape"
             />
 
@@ -248,7 +248,7 @@
                             Become A Instructor
                         </h5>
                         <h2 class="main-title">
-                            You can join with Edule as
+                            You can join with CIAS as
                             <span>a instructor?</span>
                         </h2>
                     </div>
@@ -277,7 +277,7 @@
         <div class="section-title shape-03 text-center">
             <h5 class="sub-title">Team Member’s</h5>
             <h2 class="main-title">
-                Edule Skilled <span> Instructor</span>
+                CIAS Skilled <span> Instructor</span>
             </h2>
         </div>
         <!-- Section Title End -->
@@ -290,7 +290,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-01.jpg"
+                                src="{{ asset('assets/images/author/author-01.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -313,7 +313,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-02.jpg"
+                                src="{{ asset('assets/images/author/author-02.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -336,7 +336,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-03.jpg"
+                                src="{{ asset('assets/images/author/author-03.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -359,7 +359,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-04.jpg"
+                                src="{{ asset('assets/images/author/author-04.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -382,7 +382,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-05.jpg"
+                                src="{{ asset('assets/images/author/author-05.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -405,7 +405,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-06.jpg"
+                                src="{{ asset('assets/images/author/author-06.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -428,7 +428,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-07.jpg"
+                                src="{{ asset('assets/images/author/author-07.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -451,7 +451,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-08.jpg"
+                                src="{{ asset('assets/images/author/author-08.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -474,7 +474,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-09.jpg"
+                                src="{{ asset('assets/images/author/author-09.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -497,7 +497,7 @@
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="assets/images/author/author-10.jpg"
+                                src="{{ asset('assets/images/author/author-10.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -545,7 +545,7 @@
                         <div class="testimonial-author">
                             <div class="author-thumb">
                                 <img
-                                    src="assets/images/author/author-06.jpg"
+                                    src="{{ asset('assets/images/author/author-06.jpg') }}"
                                     alt="Author"
                                 />
 
@@ -582,7 +582,7 @@
                         <div class="testimonial-author">
                             <div class="author-thumb">
                                 <img
-                                    src="assets/images/author/author-07.jpg"
+                                    src="{{ asset('assets/images/author/author-07.jpg') }}"
                                     alt="Author"
                                 />
 
@@ -619,7 +619,7 @@
                         <div class="testimonial-author">
                             <div class="author-thumb">
                                 <img
-                                    src="assets/images/author/author-03.jpg"
+                                    src="{{ asset('assets/images/author/author-03.jpg') }}"
                                     alt="Author"
                                 />
 
@@ -668,20 +668,20 @@
         <div class="brand-logo-wrapper">
             <img
                 class="shape-1"
-                src="assets/images/shape/shape-19.png"
+                src="{{ asset('assets/images/shape/shape-19.png') }}"
                 alt="Shape"
             />
 
             <img
                 class="shape-2 animation-round"
-                src="assets/images/shape/shape-20.png"
+                src="{{ asset('assets/images/shape/shape-20.png') }}"
                 alt="Shape"
             />
 
             <!-- Section Title Start -->
             <div class="section-title shape-03">
                 <h2 class="main-title">
-                    Best Supporter of <span> Edule.</span>
+                    Best Supporter of <span> CIAS.</span>
                 </h2>
             </div>
             <!-- Section Title End -->
@@ -693,7 +693,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-01.png"
+                                src="{{ asset('assets/images/brand/brand-01.png') }}"
                                 alt="Brand"
                             />
                         </div>
@@ -702,7 +702,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-02.png"
+                                src="{{ asset('assets/images/brand/brand-02.png') }}"
                                 alt="Brand"
                             />
                         </div>
@@ -711,7 +711,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-03.png"
+                                src="{{ asset('assets/images/brand/brand-03.png') }}"
                                 alt="Brand"
                             />
                         </div>
@@ -720,7 +720,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-04.png"
+                                src="{{ asset('assets/images/brand/brand-04.png') }}"
                                 alt="Brand"
                             />
                         </div>
@@ -729,7 +729,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-05.png"
+                                src="{{ asset('assets/images/brand/brand-05.png') }}"
                                 alt="Brand"
                             />
                         </div>
@@ -738,7 +738,7 @@
                         <!-- Single Brand Start -->
                         <div class="single-brand swiper-slide">
                             <img
-                                src="assets/images/brand/brand-06.png"
+                                src="{{ asset('assets/images/brand/brand-06.png') }}"
                                 alt="Brand"
                             />
                         </div>

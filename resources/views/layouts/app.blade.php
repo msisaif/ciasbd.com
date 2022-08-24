@@ -117,7 +117,7 @@
                     <div class="header-menu d-none d-lg-block">
                         <ul class="nav-menu">
                         <li><a href="{{ route('home') }}">Home</a></li>
-                        <li><a href="/courses">Courses</a></li>
+                        <li><a href="{{ route('courses.index') }}">Courses</a></li>
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
                         </ul>
@@ -162,11 +162,11 @@
                 <div class="mobile-top">
                 <p>
                     <i class="flaticon-phone-call"></i>
-                    <a href="tel:9702621413">(970) 262-1413</a>
+                    <a href="tel:+8801762-284311">+88 01762-284311</a>
                 </p>
                 <p>
                     <i class="flaticon-email"></i>
-                    <a href="mailto:address@gmail.com">address@gmail.com</a>
+                    <a href="mailto:info@ciasbd.com">info@ciasbd.com</a>
                 </p>
                 </div>
                 <!-- Mobile Top Medal End -->
@@ -184,7 +184,7 @@
                 <div class="mobile-menu-items">
                 <ul class="nav-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="{{ route('courses.index') }}">Courses</a></li>
                     <li><a href="{{ route('about') }}">About</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
                 </ul>
@@ -240,7 +240,7 @@
 
                         <img
                             class="shape-1 animation-right"
-                            src="assets/images/shape/shape-14.png"
+                            src="{{ asset('assets/images/shape/shape-14.png') }}"
                             alt="Shape"
                         />
 
@@ -250,14 +250,14 @@
                                 <li>
                                     <a href="#"
                                         ><img
-                                            src="assets/images/google-play.png"
+                                            src="{{ asset('assets/images/google-play.png') }}"
                                             alt="Google Play"
                                     /></a>
                                 </li>
                                 <li>
                                     <a href="#"
                                         ><img
-                                            src="assets/images/app-store.png"
+                                            src="{{ asset('assets/images/app-store.png') }}"
                                             alt="App Store"
                                     /></a>
                                 </li>
@@ -295,7 +295,7 @@
 
                         <div class="widget-address">
                             <h4 class="footer-widget-title">Dhaka City</h4>
-                            <p>Wireless, Mogbazar, Dhaka.</p>
+                            <p>Katabon, Dhaka.</p>
                         </div>
 
                         <ul class="widget-info">
@@ -308,7 +308,7 @@
                             <li>
                             <p>
                                 <i class="flaticon-phone-call"></i>
-                                <a href="tel:+8801762-284311">+880 1762-284311</a>
+                                <a href="tel:+8801762-284311">+88 01762-284311</a>
                             </p>
                             </li>
                         </ul>
@@ -377,7 +377,7 @@
 
                             <div class="widget-form">
                             <form action="#">
-                                <input type="text" placeholder="Email here" />
+                                <input type="number" placeholder="Phone : 01XXXXXXXXX" />
                                 <button class="btn btn-primary btn-hover-dark">
                                 Subscribe Now
                                 </button>

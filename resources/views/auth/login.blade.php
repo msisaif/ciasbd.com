@@ -7,13 +7,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -33,7 +33,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -45,7 +45,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -53,13 +53,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -76,14 +76,14 @@
                     <div class="register-login-images">
                         <div class="shape-1">
                             <img
-                                src="assets/images/shape/shape-26.png"
+                                src="{{ asset('assets/images/shape/shape-26.png') }}"
                                 alt="Shape"
                             />
                         </div>
 
                         <div class="images">
                             <img
-                                src="assets/images/register-login.png"
+                                src="{{ asset('assets/images/register-login.png') }}"
                                 alt="Register Login"
                             />
                         </div>
@@ -102,8 +102,8 @@
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <input
-                                        type="email"
-                                        placeholder="Username or Email"
+                                        type="number"
+                                        placeholder="Phone : 01XXXXXXXXX"
                                     />
                                 </div>
                                 <!-- Single Form End -->
@@ -124,7 +124,7 @@
                                     </button>
                                     <a
                                         class="btn btn-secondary btn-outline w-100"
-                                        href="/register"
+                                        href="{{ route('register') }}"
                                         >Don't have an account?</a
                                     >
                                 </div>

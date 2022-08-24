@@ -7,13 +7,13 @@
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
-        src="assets/images/shape/shape-8.png"
+        src="{{ asset('assets/images/shape/shape-8.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-2"
-        src="assets/images/shape/shape-23.png"
+        src="{{ asset('assets/images/shape/shape-23.png') }}"
         alt="Shape"
     />
 
@@ -33,7 +33,7 @@
     <div class="shape-icon-box">
         <img
             class="icon-shape-1 animation-left"
-            src="assets/images/shape/shape-5.png"
+            src="{{ asset('assets/images/shape/shape-5.png') }}"
             alt="Shape"
         />
 
@@ -45,7 +45,7 @@
 
         <img
             class="icon-shape-2"
-            src="assets/images/shape/shape-6.png"
+            src="{{ asset('assets/images/shape/shape-6.png') }}"
             alt="Shape"
         />
     </div>
@@ -53,13 +53,13 @@
 
     <img
         class="shape-3"
-        src="assets/images/shape/shape-24.png"
+        src="{{ asset('assets/images/shape/shape-24.png') }}"
         alt="Shape"
     />
 
     <img
         class="shape-author"
-        src="assets/images/author/author-11.jpg"
+        src="{{ asset('assets/images/author/author-11.jpg') }}"
         alt="Shape"
     />
 </div>
@@ -93,7 +93,7 @@
                         <div class="courses-images">
                             <a href="courses-details.html"
                                 ><img
-                                    src="assets/images/courses/courses-01.jpg"
+                                    src="{{ asset('assets/images/courses/courses-01.jpg') }}"
                                     alt="Courses"
                             /></a>
 
@@ -149,7 +149,7 @@
                                     <div class="author-thumb">
                                         <a href="#"
                                             ><img
-                                                src="assets/images/author/author-01.jpg"
+                                                src="{{ asset('assets/images/author/author-01.jpg') }}"
                                                 alt="Author"
                                         /></a>
                                     </div>
@@ -202,7 +202,7 @@
                         <div class="courses-images">
                             <a href="courses-details.html"
                                 ><img
-                                    src="assets/images/courses/courses-02.jpg"
+                                    src="{{ asset('assets/images/courses/courses-02.jpg') }}"
                                     alt="Courses"
                             /></a>
 
@@ -258,7 +258,7 @@
                                     <div class="author-thumb">
                                         <a href="#"
                                             ><img
-                                                src="assets/images/author/author-02.jpg"
+                                                src="{{ asset('assets/images/author/author-02.jpg') }}"
                                                 alt="Author"
                                         /></a>
                                     </div>
@@ -314,7 +314,7 @@
                         <div class="courses-images">
                             <a href="courses-details.html"
                                 ><img
-                                    src="assets/images/courses/courses-03.jpg"
+                                    src="{{ asset('assets/images/courses/courses-03.jpg') }}"
                                     alt="Courses"
                             /></a>
 
@@ -370,7 +370,7 @@
                                     <div class="author-thumb">
                                         <a href="#"
                                             ><img
-                                                src="assets/images/author/author-03.jpg"
+                                                src="{{ asset('assets/images/author/author-03.jpg') }}"
                                                 alt="Author"
                                         /></a>
                                     </div>
@@ -423,7 +423,7 @@
                         <div class="courses-images">
                             <a href="courses-details.html"
                                 ><img
-                                    src="assets/images/courses/courses-04.jpg"
+                                    src="{{ asset('assets/images/courses/courses-04.jpg') }}"
                                     alt="Courses"
                             /></a>
 
@@ -479,7 +479,7 @@
                                     <div class="author-thumb">
                                         <a href="#"
                                             ><img
-                                                src="assets/images/author/author-04.jpg"
+                                                src="{{ asset('assets/images/author/author-04.jpg') }}"
                                                 alt="Author"
                                         /></a>
                                     </div>
@@ -531,7 +531,7 @@
                         <div class="courses-images">
                             <a href="courses-details.html"
                                 ><img
-                                    src="assets/images/courses/courses-05.jpg"
+                                    src="{{ asset('assets/images/courses/courses-05.jpg') }}"
                                     alt="Courses"
                             /></a>
 
@@ -587,7 +587,7 @@
                                     <div class="author-thumb">
                                         <a href="#"
                                             ><img
-                                                src="assets/images/author/author-05.jpg"
+                                                src="{{ asset('assets/images/author/author-05.jpg') }}"
                                                 alt="Author"
                                         /></a>
                                     </div>
