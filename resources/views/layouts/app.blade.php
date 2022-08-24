@@ -120,6 +120,7 @@
                         <li><a href="{{ route('courses.index') }}">Courses</a></li>
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('faq') }}">FAQ</a></li>
                         </ul>
                     </div>
                     <!-- Header Menu End -->
@@ -187,6 +188,7 @@
                     <li><a href="{{ route('courses.index') }}">Courses</a></li>
                     <li><a href="{{ route('about') }}">About</a></li>
                     <li><a href="{{ route('contact') }}">Contact</a></li>
+                    <li><a href="{{ route('faq') }}">FAQ</a></li>
                 </ul>
                 </div>
                 <!-- Mobile Menu End -->

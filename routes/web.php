@@ -18,11 +18,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
 
-Route::get('/contact', [PageController::class, 'contact'])
-    ->name('contact');
+Route::controller(PageController::class)->group(function () {
+    Route::get('/about', 'about')->name('about');
+    
+    Route::get('/contact', 'contact')->name('contact');
 
-Route::get('/about', [PageController::class, 'about'])
-    ->name('about');
+    Route::get('/faq', 'faq')->name('faq');
+});
 
 Route::get('/login', [Auth\LoginController::class, 'create'])
     ->name('login');
