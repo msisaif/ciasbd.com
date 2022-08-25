@@ -2,7 +2,37 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/php-artisan/{command}/{parameters?}', function ($command, $parameters = []) {
+    $allowCommands = [
+        "migrate:install",
+        "migrate:status",
+        "migrate",
+        "key:generate",
+        "storage:link",
+        "route:cache",
+        "route:clear",
+        "view:cache",
+        "view:clear",
+        "cache:clear",
+        "config:cache",
+        "config:clear",
+    ];
+
+    if($command == 'list') {
+        return $allowCommands;
+    }
+
+    if(!in_array($command, $allowCommands)) {
+        return "Not Allow";
+    }
+
+    Artisan::call($command, $parameters);
+
+    dd(Artisan::output());
+});
 
 /*
 |--------------------------------------------------------------------------
