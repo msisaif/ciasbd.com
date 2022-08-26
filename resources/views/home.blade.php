@@ -131,7 +131,18 @@
     <div class="courses-tabs-menu courses-active">
       <div class="swiper-container">
         <ul class="swiper-wrapper nav">
+          @foreach ($categories as $category)
           <li class="swiper-slide">
+            <button
+              class="{{ $loop->first ? 'active' : '' }}"
+              data-bs-toggle="tab"
+              data-bs-target="#tabs{{ $loop->iteration }}"
+            >
+              {{ $category->name }}
+            </button>
+          </li>
+          @endforeach
+          {{-- <li class="swiper-slide">
             <button
               class="active"
               data-bs-toggle="tab"
@@ -169,7 +180,7 @@
             <button data-bs-toggle="tab" data-bs-target="#tabs7">
               Design
             </button>
-          </li>
+          </li> --}}
         </ul>
       </div>
 
