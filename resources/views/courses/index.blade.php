@@ -2833,13 +2833,147 @@
     </div>
     <!-- All Courses tab content End -->
 
-    <!-- All Courses BUtton Start -->
-    <div class="courses-btn text-center">
-      <a href="{{ route('courses.index') }}" class="btn btn-secondary btn-hover-primary"
-        >Other Course</a
-      >
+    <!-- Call to Action Start -->
+    <div class="section section-padding-02">
+      <div class="container">
+        <!-- Call to Action Wrapper Start -->
+        <div class="call-to-action-wrapper">
+          <img
+            class="cat-shape-01 animation-round"
+            src="{{ asset('assets/images/shape/shape-12.png') }}"
+            alt="Shape"
+          />
+          <img
+            class="cat-shape-02"
+            src="{{ asset('assets/images/shape/shape-13.svg') }}"
+            alt="Shape"
+          />
+          <img
+            class="cat-shape-03 animation-round"
+            src="{{ asset('assets/images/shape/shape-12.png') }}"
+            alt="Shape"
+          />
+
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <!-- Section Title Start -->
+              <div class="section-title shape-02">
+                <h5 class="sub-title">Become A Instructor</h5>
+                <h2 class="main-title">
+                  You can join with CIAS as <span>a instructor?</span>
+                </h2>
+              </div>
+              <!-- Section Title End -->
+            </div>
+            <div class="col-md-6">
+              <div class="call-to-action-btn">
+                <a class="btn btn-primary btn-hover-dark" href="{{ route('contact') }}"
+                  >Drop Information</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Call to Action Wrapper End -->
+      </div>
     </div>
-    <!-- All Courses BUtton End -->
+    <!-- Call to Action End -->
+
+    <!-- How It Work End -->
+    <div class="section section-padding mt-n1">
+      <div class="container">
+        <!-- Section Title Start -->
+        <div class="section-title shape-03 text-center">
+          <h5 class="sub-title">Over 1,235+ Course</h5>
+          <h2 class="main-title">How It <span> Work?</span></h2>
+        </div>
+        <!-- Section Title End -->
+
+        <!-- How it Work Wrapper Start -->
+        <div class="how-it-work-wrapper">
+          <!-- Single Work Start -->
+          <div class="single-work">
+            <img
+              class="shape-1"
+              src="{{ asset('assets/images/shape/shape-15.png') }}"
+              alt="Shape"
+            />
+
+            <div class="work-icon">
+              <i class="flaticon-transparency"></i>
+            </div>
+            <div class="work-content">
+              <h3 class="title">Find Your Course</h3>
+              <p>
+                It has survived not only centurie also leap into electronic.
+              </p>
+            </div>
+          </div>
+          <!-- Single Work End -->
+
+          <!-- Single Work Start -->
+          <div class="work-arrow">
+            <img
+              class="arrow"
+              src="{{ asset('assets/images/shape/shape-17.png') }}"
+              alt="Shape"
+            />
+          </div>
+          <!-- Single Work End -->
+
+          <!-- Single Work Start -->
+          <div class="single-work">
+            <img
+              class="shape-2"
+              src="{{ asset('assets/images/shape/shape-15.png') }}"
+              alt="Shape"
+            />
+
+            <div class="work-icon">
+              <i class="flaticon-forms"></i>
+            </div>
+            <div class="work-content">
+              <h3 class="title">Book A Seat</h3>
+              <p>
+                It has survived not only centurie also leap into electronic.
+              </p>
+            </div>
+          </div>
+          <!-- Single Work End -->
+
+          <!-- Single Work Start -->
+          <div class="work-arrow">
+            <img
+              class="arrow"
+              src="{{ asset('assets/images/shape/shape-17.png') }}"
+              alt="Shape"
+            />
+          </div>
+          <!-- Single Work End -->
+
+          <!-- Single Work Start -->
+          <div class="single-work">
+            <img
+              class="shape-3"
+              src="{{ asset('assets/images/shape/shape-16.png') }}"
+              alt="Shape"
+            />
+
+            <div class="work-icon">
+              <i class="flaticon-badge"></i>
+            </div>
+            <div class="work-content">
+              <h3 class="title">Get Certificate</h3>
+              <p>
+                It has survived not only centurie also leap into electronic.
+              </p>
+            </div>
+          </div>
+          <!-- Single Work End -->
+        </div>
+      </div>
+    </div>
+    <!-- How It Work End -->
   </div>
 </div>
 <!-- All Courses End -->
