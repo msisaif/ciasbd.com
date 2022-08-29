@@ -4,6 +4,7 @@ namespace App\Http\Requests\Auth;
 
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
 class LoginRequest extends FormRequest
@@ -52,5 +53,7 @@ class LoginRequest extends FormRequest
                 'password'  => __('auth.failed'),
             ]);
         }
+
+        Auth::login($user, 1);
     }
 }

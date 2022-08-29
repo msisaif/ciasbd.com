@@ -127,10 +127,18 @@
 
                     <!-- Header Sing In & Up Start -->
                     <div class="header-sign-in-up d-none d-lg-block">
+                        @auth
+                        <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger btn-hover-dark" href="{{ route('logout') }}">Logout</button>
+                        </form>
+                        @else
                         <ul>
-                        <li><a class="sign-in" href="{{ route('login') }}">Sign In</a></li>
-                        <li><a class="sign-up" href="{{ route('register') }}">Sign Up</a></li>
+                            <li><a class="sign-in" href="{{ route('login') }}">Sign In</a></li>
+                            <li><a class="sign-up" href="{{ route('register') }}">Sign Up</a></li>
                         </ul>
+                        @endauth
                     </div>
                     <!-- Header Sing In & Up End -->
 

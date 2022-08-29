@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/php-artisan/{command}/{parameters?}', function ($command, $parameters = []) {
     $allowCommands = [
@@ -56,10 +57,13 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/faq', 'faq')->name('faq');
 });
 
-Route::controller(Auth\LoginController::class)->middleware('guest')->group(function () {
-    Route::get('/login', 'create')->name('login');
-    Route::post('/login', 'store');
-    Route::post('/logout', 'destroy')->name('logout')->middleware('auth');
+Route::controller(Auth\LoginController::class)->prefix('login')->middleware('guest')->group(function () {
+    Route::get('/', 'create')->name('login');
+    Route::post('/', 'store');
+});
+
+Route::controller(Auth\LogoutController::class)->prefix('logout')->middleware('auth')->group(function () {
+    Route::delete('/', 'destroy')->name('logout');
 });
 
 Route::controller(Auth\RegisterController::class)->middleware('guest')->group(function () {
@@ -70,4 +74,8 @@ Route::controller(Auth\RegisterController::class)->middleware('guest')->group(fu
 Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/{course}', 'show')->name('show');
+});
+
+Route::controller(DashboardController::class)->prefix('dashboard')->group(function () {
+    Route::get('/', 'index')->name('dashboard');
 });
