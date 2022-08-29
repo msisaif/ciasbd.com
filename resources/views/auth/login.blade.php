@@ -98,13 +98,20 @@
                         </h3>
 
                         <div class="form-wrapper">
-                            <form action="#">
+                            <form action="{{ route('login') }}" method="POST">
+                                @csrf
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <input
                                         type="number"
                                         placeholder="Phone : 01XXXXXXXXX"
+                                        name="phone"
+                                        value="{{ old('phone') }}"
+                                        class="@error('phone') border-danger @enderror"
                                     />
+                                    @error('phone')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
@@ -112,12 +119,18 @@
                                     <input
                                         type="password"
                                         placeholder="Password"
+                                        name="password"
+                                        class="@error('password') border-danger @enderror"
                                     />
+                                    @error('password')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <button
+                                        type="submit"
                                         class="btn btn-primary btn-hover-dark w-100"
                                     >
                                         Login
@@ -125,8 +138,9 @@
                                     <a
                                         class="btn btn-secondary btn-outline w-100"
                                         href="{{ route('register') }}"
-                                        >Don't have an account?</a
                                     >
+                                        Don't have an account?
+                                    </a>
                                 </div>
                                 <!-- Single Form End -->
                             </form>

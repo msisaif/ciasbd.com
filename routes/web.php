@@ -56,8 +56,11 @@ Route::controller(PageController::class)->group(function () {
     Route::get('/faq', 'faq')->name('faq');
 });
 
-Route::get('/login', [Auth\LoginController::class, 'create'])
-    ->name('login');
+Route::controller(Auth\LoginController::class)->middleware('guest')->group(function () {
+    Route::get('/login', 'create')->name('login');
+    Route::post('/login', 'store');
+    Route::post('/logout', 'destroy')->name('logout')->middleware('auth');
+});
 
 Route::controller(Auth\RegisterController::class)->middleware('guest')->group(function () {
     Route::get('/register', 'create')->name('register');
