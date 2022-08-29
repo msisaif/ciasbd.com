@@ -59,8 +59,10 @@ Route::controller(PageController::class)->group(function () {
 Route::get('/login', [Auth\LoginController::class, 'create'])
     ->name('login');
 
-Route::get('/register', [Auth\RegisterController::class, 'create'])
-    ->name('register');
+Route::controller(Auth\RegisterController::class)->middleware('guest')->group(function () {
+    Route::get('/register', 'create')->name('register');
+    Route::post('/register', 'store');
+});
 
 Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
     Route::get('/', 'index')->name('index');

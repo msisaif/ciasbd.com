@@ -98,13 +98,20 @@
                         </h3>
 
                         <div class="form-wrapper">
-                            <form action="#">
+                            <form action="{{ route('register') }}" method="POST">
+                                @csrf
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <input
                                         type="text"
                                         placeholder="Full Name"
+                                        name="name"
+                                        value="{{ old('name') }}"
+                                        class="@error('name') border-danger @enderror"
                                     />
+                                    @error('name')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
@@ -112,7 +119,13 @@
                                     <input
                                         type="number"
                                         placeholder="Phone : 01XXXXXXXXX"
+                                        name="phone"
+                                        value="{{ old('phone') }}"
+                                        class="@error('phone') border-danger @enderror"
                                     />
+                                    @error('phone')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
@@ -120,7 +133,12 @@
                                     <input
                                         type="password"
                                         placeholder="Password"
+                                        name="password"
+                                        class="@error('password') border-danger @enderror"
                                     />
+                                    @error('password')
+                                    <div class="text-danger">{{ $message }}</div>
+                                    @enderror
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
@@ -128,12 +146,15 @@
                                     <input
                                         type="password"
                                         placeholder="Confirm Password"
+                                        name="password_confirmation"
+                                        class="@error('password') border-danger @enderror"
                                     />
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <button
+                                        type="submit"
                                         class="btn btn-primary btn-hover-dark w-100"
                                     >
                                         Create an account
@@ -141,7 +162,9 @@
                                     <a
                                         class="btn btn-secondary btn-outline w-100"
                                         href="{{ route('login') }}"
-                                        >Already have an account?</a
+                                    >
+                                        Already have an account?
+                                    </a
                                     >
                                 </div>
                                 <!-- Single Form End -->
