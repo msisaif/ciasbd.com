@@ -127,18 +127,19 @@
 
                     <!-- Header Sing In & Up Start -->
                     <div class="header-sign-in-up d-none d-lg-block">
-                        @auth
-                        <form action="{{ route('logout') }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-hover-dark" href="{{ route('logout') }}">Logout</button>
-                        </form>
-                        @else
                         <ul>
+                            @auth
+                            <li><a class="sign-in" href="{{ route('dashboard') }}">Dashboard</a></li>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <li><a class="sign-up" href="javascript::void()" onclick="this.closest('form').submit()">Logout</a></li>
+                            </form>
+                            @else
                             <li><a class="sign-in" href="{{ route('login') }}">Sign In</a></li>
                             <li><a class="sign-up" href="{{ route('register') }}">Sign Up</a></li>
+                            @endauth
                         </ul>
-                        @endauth
                     </div>
                     <!-- Header Sing In & Up End -->
 
@@ -183,8 +184,17 @@
                 <!-- Mobile Sing In & Up Start -->
                 <div class="mobile-sign-in-up">
                 <ul>
-                    <li><a class="sign-in" href="{{ route('login') }}">Sign In</a></li>
-                    <li><a class="sign-up" href="{{ route('register') }}">Sign Up</a></li>
+                @auth
+                <li><a class="sign-in" href="{{ route('dashboard') }}">Dashboard</a></li>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <li><a class="sign-up" href="javascript::void()" onclick="this.closest('form').submit()">Logout</a></li>
+                </form>
+                @else
+                <li><a class="sign-in" href="{{ route('login') }}">Sign In</a></li>
+                <li><a class="sign-up" href="{{ route('register') }}">Sign Up</a></li>
+                @endauth
                 </ul>
                 </div>
                 <!-- Mobile Sing In & Up End -->
