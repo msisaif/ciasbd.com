@@ -206,8 +206,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -269,7 +269,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -331,8 +331,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -456,7 +456,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -518,7 +518,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -588,8 +588,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -651,7 +651,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -713,8 +713,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -838,7 +838,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -900,7 +900,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -970,8 +970,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1033,7 +1033,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1095,8 +1095,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1220,7 +1220,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1282,7 +1282,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1352,8 +1352,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1415,7 +1415,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1477,8 +1477,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1602,7 +1602,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1664,7 +1664,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1734,8 +1734,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1797,7 +1797,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1859,8 +1859,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -1984,7 +1984,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2046,7 +2046,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2116,8 +2116,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2179,7 +2179,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2241,8 +2241,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2366,7 +2366,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2428,7 +2428,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2498,8 +2498,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳385.00</span>
-                      <span class="old-parice">৳440.00</span>
+                      <span class="sale-parice">৳385</span>
+                      <span class="old-parice">৳440</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2561,7 +2561,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳420.00</span>
+                      <span class="sale-parice">৳420</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2623,8 +2623,8 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳295.00</span>
-                      <span class="old-parice">৳340.00</span>
+                      <span class="sale-parice">৳295</span>
+                      <span class="old-parice">৳340</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2748,7 +2748,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳136.00</span>
+                      <span class="sale-parice">৳136</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
@@ -2810,7 +2810,7 @@
                   </div>
                   <div class="courses-price-review">
                     <div class="courses-price">
-                      <span class="sale-parice">৳237.00</span>
+                      <span class="sale-parice">৳237</span>
                     </div>
                     <div class="courses-review">
                       <span class="rating-count">4.9</span>
