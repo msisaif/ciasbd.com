@@ -66,9 +66,9 @@ Route::controller(Auth\LogoutController::class)->prefix('logout')->middleware('a
     Route::delete('/', 'destroy')->name('logout');
 });
 
-Route::controller(Auth\RegisterController::class)->middleware('guest')->group(function () {
-    Route::get('/register', 'create')->name('register');
-    Route::post('/register', 'store');
+Route::controller(Auth\RegisterController::class)->prefix('register')->middleware('guest')->group(function () {
+    Route::get('/', 'create')->name('register');
+    Route::post('/', 'store');
 });
 
 Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
