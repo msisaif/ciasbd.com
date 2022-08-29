@@ -85,7 +85,7 @@
   <!-- Slider Images End -->
 
   <!-- Slider Video Start -->
-  <div class="slider-video">
+  {{-- <div class="slider-video">
     <img
       class="shape-1"
       src="{{ asset('assets/images/shape/shape-9.png') }}"
@@ -100,7 +100,7 @@
         ><i class="flaticon-play"></i
       ></a>
     </div>
-  </div>
+  </div> --}}
   <!-- Slider Video End -->
 </div>
 <!-- Slider End -->
