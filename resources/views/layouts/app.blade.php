@@ -25,11 +25,11 @@
         <link rel="stylesheet" href="{{ asset('assets/css/plugins/jqvmap.min.css') }}" /> --}}
 
         <!-- Main Style CSS -->
-        {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" /> --}}
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 
         <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
         <link rel="stylesheet" href="{{ asset('assets/css/vendor/plugins.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('assets/css/style.min.css') }}" /> --}}
 
         <!-- App CSS -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
