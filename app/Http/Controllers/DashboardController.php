@@ -9,12 +9,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $categories = Category::query()
-            ->whereNotNull('name')
-            ->whereNotNull('slug')
-            ->take(10)
-            ->get();
-
-        return view('dashboard', compact('categories'));
+        return view('dashboard');
     }
 }
