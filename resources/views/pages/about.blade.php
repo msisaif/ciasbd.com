@@ -258,7 +258,7 @@
                     <div class="call-to-action-btn">
                         <a
                             class="btn btn-primary btn-hover-dark"
-                            href="contact.html"
+                            href="{{ route('contact') }}"
                             >Drop Information</a
                         >
                     </div>
