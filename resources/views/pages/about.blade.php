@@ -112,10 +112,11 @@
                             not only five centuries.
                         </p>
                         <a
-                            href="#"
+                            href="{{ route('courses.index') }}"
                             class="btn btn-primary btn-hover-dark"
-                            >Start A Course</a
                         >
+                            Start A Course
+                        </a>
                     </div>
                     <!-- About Content End -->
                 </div>
