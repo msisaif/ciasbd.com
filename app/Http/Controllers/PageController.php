@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Instructor;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -13,7 +14,11 @@ class PageController extends Controller
 
     public function about()
     {
-        return view('pages.about');
+        $instructors = Instructor::query()
+            ->take('10')
+            ->get();
+
+        return view('pages.about', compact('instructors'));
     }
 
     public function faq()

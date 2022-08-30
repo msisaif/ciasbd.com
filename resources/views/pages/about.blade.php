@@ -285,12 +285,13 @@
         <!-- Team Wrapper Start -->
         <div class="team-wrapper">
             <div class="row row-cols-lg-5 row-cols-sm-3 row-cols-2">
+                @foreach ($instructors as $instructor)
                 <div class="col">
                     <!-- Single Team Start -->
                     <div class="single-team">
                         <div class="team-thumb">
                             <img
-                                src="{{ asset('assets/images/author/author-01.jpg') }}"
+                                src="{{ asset($instructor->avatar ?? 'assets/images/author/author-01.jpg') }}"
                                 alt="Author"
                             />
                         </div>
@@ -300,15 +301,17 @@
                                 <i class="icofont-star"></i>
                                 <span class="text">(rating)</span>
                             </div>
-                            <h4 class="name">Margarita James</h4>
-                            <span class="designation"
-                                >MSC, Instructor</span
-                            >
+                            <h4 class="name">{{ $instructor->name }}</h4>
+                            <span class="designation">
+                                {{ $instructor->designation }}
+                            </span>
                         </div>
                     </div>
                     <!-- Single Team End -->
                 </div>
-                <div class="col">
+                @endforeach
+                    
+                {{-- <div class="col">
                     <!-- Single Team Start -->
                     <div class="single-team">
                         <div class="team-thumb">
@@ -514,7 +517,7 @@
                         </div>
                     </div>
                     <!-- Single Team End -->
-                </div>
+                </div> --}}
             </div>
         </div>
         <!-- Team Wrapper End -->
