@@ -16603,7 +16603,7 @@ img {
 .single-form textarea {
     width: 100%;
     height: 60px;
-    padding: 0 25px;
+    padding: 0 20px;
     font-size: 15px;
     color: #52565b;
     -webkit-transition: all 0.3s ease 0s;
@@ -23179,7 +23179,7 @@ img {
 
 @media only screen and (max-width: 575px) {
     .contact-wrapper {
-        padding: 30px;
+        padding: 20px;
         padding-top: 0;
     }
 }

@@ -120,10 +120,9 @@
                                     Email Address.
                                 </h6>
                                 <p>
-                                    <a
-                                        href="mailto:info@ciasbd.com"
-                                        >info@ciasbd.com</a
-                                    >
+                                    <a href="mailto:info@ciasbd.com">
+                                        info@ciasbd.com
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -153,8 +152,7 @@
 
                         <div class="form-wrapper">
                             <form
-                                id="contact-form"
-                                action="https://htmlmail.hasthemes.com/humayun/edule-contact.php"
+                                action="#"
                                 method="POST"
                             >
                                 <!-- Single Form Start -->
@@ -162,16 +160,16 @@
                                     <input
                                         type="text"
                                         name="name"
-                                        placeholder="Name"
+                                        placeholder="Full Name"
                                     />
                                 </div>
                                 <!-- Single Form End -->
                                 <!-- Single Form Start -->
                                 <div class="single-form">
                                     <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email"
+                                        type="number"
+                                        name="phone"
+                                        placeholder="Phone : 01XXXXXXXXX"
                                     />
                                 </div>
                                 <!-- Single Form End -->
@@ -180,6 +178,7 @@
                                     <input
                                         type="text"
                                         name="subject"
+                                        {{-- placeholder="Subject : I want to be a instructor" --}}
                                         placeholder="Subject"
                                     />
                                 </div>
