@@ -13,4 +13,9 @@ class Instructor extends Model
     public $timestamps = false;
     
     protected $guarded = [];
+
+    public function courses()
+    {
+        return $this->belongsToMany(Course::class);
+    }
 }
