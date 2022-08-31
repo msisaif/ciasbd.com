@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Course;
 use Illuminate\Http\Request;
 
 class CourseController extends Controller
@@ -18,8 +19,16 @@ class CourseController extends Controller
         return view('courses.index', compact('categories'));
     }
 
-    public function show($id)
+    public function show(Course $course)
     {
-        return view('courses.show');
+        if(!$course->is_published) {
+            return abort(404);
+        }
+
+        $course->load([
+            'category',
+        ]);
+
+        return view('courses.show', compact('course'));
     }
 }

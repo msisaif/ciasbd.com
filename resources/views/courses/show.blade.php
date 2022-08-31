@@ -4,6 +4,7 @@
 
 @section('content')
 <!-- Page Banner Start -->
+{{-- <div class="section page-banner" style="height: 100px;"></div> --}}
 <div class="section page-banner">
     <img
         class="shape-1 animation-round"
@@ -74,11 +75,12 @@
                 <div class="courses-details">
                     <div class="courses-details-images">
                         <img
-                            src="{{ asset('assets/images/courses/courses-details.jpg') }}"
+                            src="{{ asset($course->thumbnail ?? 'assets/images/courses/courses-details.jpg') }}"
                             alt="Courses Details"
                         />
-                        <span class="tags">Finance</span>
+                        <span class="tags">{{ $course->category->name ?? '' }}</span>
 
+                        @if($course->intro_video)
                         <div class="courses-play">
                             <img
                                 src="{{ asset('assets/images/courses/circle-shape.png') }}"
@@ -86,15 +88,15 @@
                             />
                             <a
                                 class="play video-popup"
-                                href="https://www.youtube.com/watch?v=Wif4ZkwC0AM"
+                                href="{{ $course->intro_video }}"
                                 ><i class="flaticon-play"></i
                             ></a>
                         </div>
+                        @endif
                     </div>
 
                     <h2 class="title">
-                        Finance & Investment Series: Learn to Budget
-                        and Calculate Your Net Worth.
+                        {{ $course->title }}
                     </h2>
 
                     <div class="courses-details-admin">
@@ -133,6 +135,15 @@
                         <!-- Details Tab Menu Start -->
                         <div class="details-tab-menu">
                             <ul class="nav justify-content-center">
+                                {{-- <li>
+                                    <button
+                                        class="active"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#syllabus"
+                                    >
+                                        Syllabus
+                                    </button>
+                                </li> --}}
                                 <li>
                                     <button
                                         class="active"
@@ -165,9 +176,9 @@
                         <!-- Details Tab Content Start -->
                         <div class="details-tab-content">
                             <div class="tab-content">
-                                <div
+                                {{-- <div
                                     class="tab-pane fade show active"
-                                    id="description"
+                                    id="syllabus"
                                 >
                                     <!-- Tab Description Start -->
                                     <div class="tab-description">
@@ -298,6 +309,98 @@
                                                 software.
                                             </p>
                                         </div>
+                                    </div>
+                                    <!-- Tab Description End -->
+                                </div> --}}
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="description"
+                                >
+                                    <!-- Tab Description Start -->
+                                    <div class="tab-description">
+                                        <div
+                                            class="description-wrapper"
+                                            style="white-space: pre-line"
+                                        >
+                                            <h3 class="tab-title">
+                                                Description:
+                                            </h3>
+                                            {!! $course->description !!}
+                                        </div>
+                                        {{-- <div
+                                            class="description-wrapper"
+                                        >
+                                            <h3 class="tab-title">
+                                                Curriculum:
+                                            </h3>
+                                            <p>
+                                                Lorem Ipsum is
+                                                simply dummy text of
+                                                the printing and
+                                                typesetting
+                                                industry. Lorem
+                                                Ipsum has been the
+                                                industry's standard
+                                                dummy text ever
+                                                since the 1500s when
+                                                an unknown printer
+                                                took a galley of
+                                                type and scrambled
+                                                it to make a type
+                                                specimen book. It
+                                                has survived not
+                                                only five centuries,
+                                                but also the leap
+                                                into electronic
+                                                typesetting,
+                                                remaining
+                                                essentially
+                                                unchanged. It was
+                                                popularsed in the
+                                                1960 with release
+                                                containing Lorem
+                                                Ipsum passages
+                                                desktop publishing
+                                                software.
+                                            </p>
+                                        </div> --}}
+                                        {{-- <div
+                                            class="description-wrapper"
+                                        >
+                                            <h3 class="tab-title">
+                                                Certification:
+                                            </h3>
+                                            <p>
+                                                Lorem Ipsum is
+                                                simply dummy text of
+                                                the printing and
+                                                typesetting
+                                                industry. Lorem
+                                                Ipsum has been the
+                                                industry's standard
+                                                dummy text ever
+                                                since the 1500s when
+                                                an unknown printer
+                                                took a galley of
+                                                type and scrambled
+                                                it to make a type
+                                                specimen book. It
+                                                has survived not
+                                                only five centuries,
+                                                but also the leap
+                                                into electronic
+                                                typesetting,
+                                                remaining
+                                                essentially
+                                                unchanged. It was
+                                                popularsed in the
+                                                1960 with release
+                                                containing Lorem
+                                                Ipsum passages
+                                                desktop publishing
+                                                software.
+                                            </p>
+                                        </div> --}}
                                     </div>
                                     <!-- Tab Description End -->
                                 </div>
@@ -1177,47 +1280,55 @@
                     <!-- Sidebar Widget Information Start -->
                     <div class="sidebar-widget widget-information">
                         <div class="info-price">
-                            <span class="price">৳420.38</span>
+                            <span class="price">
+                                ৳{{ $course->price - $course->discount }}
+                                @if($course->discount > 0) <del class="ps-2 text-muted">৳{{ $course->price }}</del> @endif
+                            </span>
                         </div>
                         <div class="info-list">
                             <ul>
+                                @if($course->lectures_count)
                                 <li>
-                                    <i
-                                        class="icofont-man-in-glasses"
-                                    ></i>
+                                    <i class="icofont-man-in-glasses"></i>
                                     <strong>Instructor</strong>
                                     <span>Pamela Foster</span>
                                 </li>
+                                @endif
+                                @if($course->lectures_count)
                                 <li>
-                                    <i
-                                        class="icofont-clock-time"
-                                    ></i>
+                                    <i class="icofont-ui-video-play"></i>
+                                    <strong>Lectures</strong>
+                                    <span>{{ $course->lectures_count }}</span>
+                                </li>
+                                @endif
+                                @if($course->quizzes_count)
+                                <li>
+                                    <i class="icofont-prescription"></i>
+                                    <strong>Quizzes</strong>
+                                    <span>{{ $course->quizzes_count }}</span>
+                                </li>
+                                @endif
+                                {{-- <li>
+                                    <i class="icofont-clock-time"></i>
                                     <strong>Duration</strong>
                                     <span>08 hr 15 mins</span>
-                                </li>
-                                <li>
-                                    <i
-                                        class="icofont-ui-video-play"
-                                    ></i>
-                                    <strong>Lectures</strong>
-                                    <span>29</span>
-                                </li>
+                                </li> --}}
+                                @if($course->level)
                                 <li>
                                     <i class="icofont-bars"></i>
                                     <strong>Level</strong>
-                                    <span>Secondary</span>
+                                    <span>{{ \App\Models\Course::LEVEL_ARRAY[$course->level] ?? 'Beginner' }}</span>
                                 </li>
+                                @endif
                                 <li>
                                     <i class="icofont-book-alt"></i>
                                     <strong>Language</strong>
-                                    <span>English</span>
+                                    <span>{{ \App\Models\Course::LANGUAGE_ARRAY[$course->language] ?? 'Bangla' }}</span>
                                 </li>
                                 <li>
-                                    <i
-                                        class="icofont-certificate-alt-1"
-                                    ></i>
+                                    <i class="icofont-certificate-alt-1"></i>
                                     <strong>Certificate</strong>
-                                    <span>Yes</span>
+                                    <span>{{ $course->has_certificate ? 'Yes' : 'No' }}</span>
                                 </li>
                             </ul>
                         </div>
