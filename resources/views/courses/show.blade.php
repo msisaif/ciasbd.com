@@ -89,8 +89,9 @@
                             <a
                                 class="play video-popup"
                                 href="{{ $course->intro_video }}"
-                                ><i class="flaticon-play"></i
-                            ></a>
+                            >
+                                <i class="flaticon-play"></i>
+                            </a>
                         </div>
                         @endif
                     </div>
@@ -101,19 +102,38 @@
 
                     <div class="courses-details-admin">
                         <div class="admin-author">
+                            @foreach ($course->instructors as $instructor)
+                            @if($instructor->name)
                             <div class="author-thumb">
+                                @if($instructor->avatar)
                                 <img
-                                    src="{{ asset('assets/images/author/author-01.jpg') }}"
+                                    src="{{ asset($instructor->avatar) }}"
                                     alt="Author"
                                 />
+                                @else
+                                <div 
+                                    class="border rounded-circle d-flex justify-content-center align-items-center"
+                                    style="width: 50px; height: 50px; font-size: 24px; background: #dee2e6"
+                                >
+                                    {{ $instructor->name[0] }}
+                                </div>
+                                @endif
                             </div>
+                            @break
+                            @endif
+                            @endforeach
                             <div class="author-content">
-                                <a class="name" href="#"
-                                    >Pamela Foster</a
-                                >
-                                <span class="Enroll"
-                                    >286 Enrolled Students</span
-                                >
+                                @foreach ($course->instructors as $instructor)
+                                @if($instructor->name)
+                                <a class="name" href="#">
+                                    {{ $instructor->name }}
+                                </a>
+                                @break
+                                @endif
+                                @endforeach
+                                <span class="Enroll">
+                                    286 Enrolled Students
+                                </span>
                             </div>
                         </div>
                         <div class="admin-rating">
@@ -121,12 +141,12 @@
                             <span class="rating-star">
                                 <span
                                     class="rating-bar"
-                                    style="width: 80%"
+                                    style="width: 60%"
                                 ></span>
                             </span>
-                            <span class="rating-text"
-                                >(5,764 Rating)</span
-                            >
+                            <span class="rating-text">
+                                (5,764 Rating)
+                            </span>
                         </div>
                     </div>
 
@@ -153,6 +173,7 @@
                                         Description
                                     </button>
                                 </li>
+                                @if($course->instructors_count)
                                 <li>
                                     <button
                                         data-bs-toggle="tab"
@@ -161,6 +182,7 @@
                                         Instructors
                                     </button>
                                 </li>
+                                @endif
                                 <li>
                                     <button
                                         data-bs-toggle="tab"
@@ -404,6 +426,7 @@
                                     </div>
                                     <!-- Tab Description End -->
                                 </div>
+                                @if($course->instructors_count)
                                 <div
                                     class="tab-pane fade"
                                     id="instructors"
@@ -415,6 +438,7 @@
                                         </h3>
 
                                         <div class="row">
+                                            @foreach ($course->instructors as $instructor)
                                             <div
                                                 class="col-md-3 col-6"
                                             >
@@ -425,10 +449,12 @@
                                                     <div
                                                         class="team-thumb"
                                                     >
+                                                        @if($instructor->avatar)
                                                         <img
-                                                            src="{{ asset('assets/images/author/author-01.jpg') }}"
+                                                            src="{{ asset($instructor->avatar) }}"
                                                             alt="Author"
                                                         />
+                                                        @endif
                                                     </div>
                                                     <div
                                                         class="team-content"
@@ -436,34 +462,24 @@
                                                         <div
                                                             class="rating"
                                                         >
-                                                            <span
-                                                                class="count"
-                                                                >4.9</span
-                                                            >
-                                                            <i
-                                                                class="icofont-star"
-                                                            ></i>
-                                                            <span
-                                                                class="text"
-                                                                >(rating)</span
-                                                            >
+                                                            <span class="count">4.9</span>
+                                                            <i class="icofont-star"></i>
+                                                            <span class="text">(rating)</span>
                                                         </div>
                                                         <h4
                                                             class="name"
                                                         >
-                                                            Margarita
-                                                            James
+                                                            {{ $instructor->name }}
                                                         </h4>
-                                                        <span
-                                                            class="designation"
-                                                            >MSC,
-                                                            Instructor</span
-                                                        >
+                                                        <span class="designation">
+                                                            {{ $instructor->designation }}
+                                                        </span>
                                                     </div>
                                                 </div>
                                                 <!-- Single Team End -->
                                             </div>
-                                            <div
+                                            @endforeach
+                                            {{-- <div
                                                 class="col-md-3 col-6"
                                             >
                                                 <!-- Single Team Start -->
@@ -606,7 +622,7 @@
                                                     </div>
                                                 </div>
                                                 <!-- Single Team End -->
-                                            </div>
+                                            </div> --}}
                                         </div>
 
                                         <div class="row gx-10">
@@ -817,6 +833,7 @@
                                     </div>
                                     <!-- Tab Instructors End -->
                                 </div>
+                                @endif
                                 <div
                                     class="tab-pane fade"
                                     id="reviews"
@@ -1287,13 +1304,16 @@
                         </div>
                         <div class="info-list">
                             <ul>
-                                @if($course->lectures_count)
+                                @foreach ($course->instructors as $instructor)
+                                @if($instructor->name)
                                 <li>
                                     <i class="icofont-man-in-glasses"></i>
                                     <strong>Instructor</strong>
-                                    <span>Pamela Foster</span>
+                                    <span>{{ $instructor->name }}</span>
                                 </li>
+                                @break
                                 @endif
+                                @endforeach
                                 @if($course->lectures_count)
                                 <li>
                                     <i class="icofont-ui-video-play"></i>

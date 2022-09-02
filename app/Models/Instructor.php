@@ -16,6 +16,7 @@ class Instructor extends Model
 
     public function courses()
     {
-        return $this->belongsToMany(Course::class);
+        return $this->belongsToMany(Course::class)
+            ->wherePivotNull('deleted_at');
     }
 }

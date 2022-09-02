@@ -25,9 +25,11 @@ class CourseController extends Controller
             return abort(404);
         }
 
-        $course->load([
-            'category',
-        ]);
+        $course->loadCount('instructors')
+            ->load([
+                'category',
+                'instructors',
+            ]);
 
         return view('courses.show', compact('course'));
     }

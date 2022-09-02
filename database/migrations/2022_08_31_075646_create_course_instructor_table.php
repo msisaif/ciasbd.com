@@ -17,7 +17,7 @@ class CreateCourseInstructorTable extends Migration
             $table->id();
             $table->unsignedBigInteger('course_id');
             $table->unsignedBigInteger('instructor_id');
-            $table->timestamps();
+            // $table->timestamps();
             $table->softDeletes();
 
             $table->index(['course_id', 'instructor_id']);
