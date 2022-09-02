@@ -1354,7 +1354,7 @@
                         </div>
                         <div class="info-btn">
                             <a
-                                href="#"
+                                href="{{ route('courses.learn', $course->id) }}"
                                 class="btn btn-primary btn-hover-dark"
                                 >Enroll Now</a
                             >

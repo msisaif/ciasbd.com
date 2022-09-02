@@ -74,6 +74,7 @@ Route::controller(Auth\RegisterController::class)->prefix('register')->middlewar
 Route::controller(CourseController::class)->prefix('courses')->name('courses.')->group(function () {
     Route::get('/', 'index')->name('index');
     Route::get('/{course}', 'show')->name('show');
+    Route::get('/{course}/learn/{content?}', 'learn')->name('learn')->middleware('auth');
 });
 
 Route::controller(DashboardController::class)->prefix('dashboard')->group(function () {

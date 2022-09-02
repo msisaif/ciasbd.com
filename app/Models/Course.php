@@ -33,4 +33,9 @@ class Course extends Model
         return $this->belongsToMany(Instructor::class)
             ->wherePivotNull('deleted_at');
     }
+
+    public function topics()
+    {
+        return $this->hasMany(Topic::class);
+    }
 }

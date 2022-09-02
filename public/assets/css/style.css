@@ -23504,7 +23504,7 @@ img {
 
 .courses-video-player {
     width: 71.8%;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -23516,7 +23516,8 @@ img {
 
 @media only screen and (max-width: 767px) {
     .courses-video-player {
-        padding-bottom: 60px;
+        /* padding-bottom: 60px; */
+        padding-bottom: 10px;
     }
 }
 
@@ -23855,20 +23856,23 @@ img {
 }
 
 .courses-enroll-content {
-    padding: 0 70px;
+    /* padding: 0 70px; */
+    padding: 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
     only screen and (min-width: 768px) and (max-width: 991px),
     only screen and (max-width: 767px) {
     .courses-enroll-content {
-        padding: 0 40px;
+        /* padding: 0 40px; */
+        padding: 0;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .courses-enroll-content {
-        padding: 0 20px;
+        /* padding: 0 20px; */
+        padding: 0;
     }
 }
 
@@ -23885,7 +23889,7 @@ img {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -23897,7 +23901,7 @@ img {
 
 .courses-enroll-content .courses-enroll-title .title {
     max-width: 760px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     color: #212832;

@@ -97,7 +97,7 @@
                 <!-- Single Courses Start -->
                 <div class="single-courses">
                     <div class="courses-images">
-                        <a href="{{ route('courses.show', 1) }}"
+                        <a href="{{ route('courses.learn', 1) }}"
                             ><img
                                 src="{{ asset('assets/images/courses/courses-01.jpg') }}"
                                 alt="Courses"
@@ -171,7 +171,7 @@
                         </div>
 
                         <h4 class="title">
-                            <a href="{{ route('courses.show', 1) }}"
+                            <a href="{{ route('courses.learn', 1) }}"
                                 >Data Science and Machine
                                 Learning with Python - Hands
                                 On!</a
@@ -206,7 +206,7 @@
                 <!-- Single Courses Start -->
                 <div class="single-courses">
                     <div class="courses-images">
-                        <a href="{{ route('courses.show', 1) }}"
+                        <a href="{{ route('courses.learn', 1) }}"
                             ><img
                                 src="{{ asset('assets/images/courses/courses-02.jpg') }}"
                                 alt="Courses"
@@ -280,7 +280,7 @@
                         </div>
 
                         <h4 class="title">
-                            <a href="{{ route('courses.show', 1) }}"
+                            <a href="{{ route('courses.learn', 1) }}"
                                 >Create Amazing Color Schemes
                                 for Your UX Design Projects</a
                             >
@@ -318,7 +318,7 @@
                 <!-- Single Courses Start -->
                 <div class="single-courses">
                     <div class="courses-images">
-                        <a href="{{ route('courses.show', 1) }}"
+                        <a href="{{ route('courses.learn', 1) }}"
                             ><img
                                 src="{{ asset('assets/images/courses/courses-03.jpg') }}"
                                 alt="Courses"
@@ -392,7 +392,7 @@
                         </div>
 
                         <h4 class="title">
-                            <a href="{{ route('courses.show', 1) }}"
+                            <a href="{{ route('courses.learn', 1) }}"
                                 >Culture & Leadership:
                                 Strategies for a Successful
                                 Business</a
@@ -427,7 +427,7 @@
                 <!-- Single Courses Start -->
                 <div class="single-courses">
                     <div class="courses-images">
-                        <a href="{{ route('courses.show', 1) }}"
+                        <a href="{{ route('courses.learn', 1) }}"
                             ><img
                                 src="{{ asset('assets/images/courses/courses-04.jpg') }}"
                                 alt="Courses"
@@ -501,7 +501,7 @@
                         </div>
 
                         <h4 class="title">
-                            <a href="{{ route('courses.show', 1) }}"
+                            <a href="{{ route('courses.learn', 1) }}"
                                 >Finance Series: Learn to Budget
                                 and Calculate your Net Worth.</a
                             >
@@ -535,7 +535,7 @@
                 <!-- Single Courses Start -->
                 <div class="single-courses">
                     <div class="courses-images">
-                        <a href="{{ route('courses.show', 1) }}"
+                        <a href="{{ route('courses.learn', 1) }}"
                             ><img
                                 src="{{ asset('assets/images/courses/courses-05.jpg') }}"
                                 alt="Courses"
@@ -609,7 +609,7 @@
                         </div>
 
                         <h4 class="title">
-                            <a href="{{ route('courses.show', 1) }}"
+                            <a href="{{ route('courses.learn', 1) }}"
                                 >Build Brand Into Marketing:
                                 Tackling the New Marketing
                                 Landscape</a
@@ -646,9 +646,12 @@
 
     <!-- All Courses BUtton Start -->
     <div class="courses-btn text-center">
-      <a href="{{ route('courses.index') }}" class="btn btn-secondary btn-hover-primary"
-        >Find A Course</a
-      >
+        <a 
+            href="{{ route('courses.index') }}" 
+            class="btn btn-secondary btn-hover-primary"
+        >
+        Find A Course
+        </a>
     </div>
     <!-- All Courses BUtton End -->
   </div>
